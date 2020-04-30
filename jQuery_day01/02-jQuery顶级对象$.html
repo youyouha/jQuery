@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 此处需注意！必须要引入jQuery库 -->
+    <script src="jQuery.mini.js"></script>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <script>
+        // 1.$ 是 jQuery 的别称，在代码中可以使用 jQuery 代替 $，但一般为了方便，通常都直接使用 $ 。
+        // $(function () {
+        //     alert(11);
+        // });
+        // 等同于
+        jQuery(function () {
+            alert(11);
+        });
+        //隐藏盒子
+        $(function () {
+            // $('div').hide();
+            jQuery('div').hide();
+        })
+    </script>
+</body>
+
+</html>

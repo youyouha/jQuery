@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jQuery.mini.js"></script>
+</head>
+
+<body>
+    <div>l am div</div>
+    <div class="nav">l am nav div</div>
+    <p> l am p</p>
+    <ol>
+        <li>belong to ol</li>
+        <li>belong to ol</li>
+        <li>belong to ol</li>
+        <li>belong to ol</li>
+    </ol>
+    <ul>
+        <li>belong to ul</li>
+        <li>belong to ul</li>
+        <li>belong to ul</li>
+        <li>belong to ul</li>
+    </ul>
+    <script>
+        // 入口函数
+        $(function () {
+            console.log($('.nav'));
+            //后代选择器
+            console.log($('ul li'));
+
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jQuery.mini.js"></script>
+</head>
+
+<body>
+    <ul>
+        <li>我是第1个</li>
+        <li>我是第2个</li>
+        <li>我是第3个</li>
+        <li>我是第4个</li>
+        <li>我是第5个</li>
+    </ul>
+    <ol>
+        <li>第1个</li>
+        <li>第2个</li>
+        <li>第3个</li>
+        <li>第4个</li>
+        <li>第5个</li>
+    </ol>
+    <script>
+        $(function () {
+            $('ul li:first').css('color', 'red');
+            $('ul li:eq(2)').css('color', 'red'); //ul li:eq(2)   2为索引号 指的是第三个
+            // 奇数
+            $('ol li:odd').css('background', 'plum');
+            //偶数   序列号为偶数   即 0-第一个  1-第二个。。。
+            $('ol li:even').css('background', 'pink');
+
+        })
+    </script>
+</body>
+
+</html>

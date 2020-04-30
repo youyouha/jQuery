@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jQuery.mini.js"></script>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        // $('div').hide();  //要先有DOM元素才能执行样式属性
+        //解决方法：
+        //1.等待页面加载完毕再去执行 JS代码
+        $(document).ready(function () {
+            $('div').hide();
+        })
+        //2.等待页面加载完毕再去执行 JS代码
+        // jQuery的入口函数
+        $(function () {
+            $('div').hide();
+        })
+
+        // 1. 等着 DOM 结构渲染完毕即可执行内部代码，不必等到所有外部资源加载完成，jQuery 帮我们完成了封装。
+        // 2. 相当于原生 js 中的 DOMContentLoaded。
+        // 3. 不同于原生 js 中的 load 事件是等页面文档、外部的 js 文件、css文件、图片加载完毕才执行内部代码。 
+        // 4. 更推荐使用第2种方式。
+    </script>
+    <div></div>
+
+
+</body>
+
+</html>
